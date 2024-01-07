@@ -10,7 +10,10 @@ import {app} from './src/app.js'
 dotenv.config({
     path: './.env'
 })
-app.use(cors());
+app.use(cors({
+    origin: '*',
+    credentials: true
+ }));
 app.get( '/', (req,res)=>{
     res.send('Server is Ready')
 })
