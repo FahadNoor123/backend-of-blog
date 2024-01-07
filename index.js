@@ -11,9 +11,9 @@ dotenv.config({
     path: './.env'
 })
 app.use(cors({
-    origin: '*',
+    origin: ['https://bloger-website-gamma.vercel.app/', 'https://your-frontend-app2.com'],
     credentials: true
- }));
+}));
 app.get( '/', (req,res)=>{
     res.send('Server is Ready')
 })
