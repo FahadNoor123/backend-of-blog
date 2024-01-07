@@ -1,12 +1,12 @@
 // require('dotenv').config({path: './env'})
 import dotenv from "dotenv"
-import connectDB from "./db/index.js";
+import connectDB from "./src/db/index.js";
 // const cookieParser = require('cookie-parser');
 import cookieParser from 'cookie-parser';
 app.use(cookieParser());
 
 import cors from 'cors'
-import {app} from './app.js'
+import {app} from './src/app.js'
 dotenv.config({
     path: './.env'
 })
