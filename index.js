@@ -13,6 +13,7 @@ dotenv.config({
 app.use(cors({
     origin: '*',
     credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add the HTTP methods you want to allow
   }));
 app.get( '/', (req,res)=>{
     res.send('Server is Ready')
