@@ -20,7 +20,7 @@ import blogRouter from "./routes/blog.routes.js"
 //routes declaration
 app.use("/api/v1/users", userRouter)
 // Use the blogRouter for blog-related routes under the /api/v1/writeblog namespace
-app.use("https://backend-of-blog.vercel.app/v1/blog", blogRouter);
+app.use("/api/v1/blog", blogRouter);
 
 // http://localhost:8000/api/v1/users/register
 
