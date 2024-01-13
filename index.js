@@ -11,7 +11,7 @@ dotenv.config({
     path: './.env'
 })
 app.use(cors({
-    origin: 'https://bloger-website-gamma.vercel.app',
+    origin: ['https://bloger-website-gamma.vercel.app', 'https://vercel-project-kappa.vercel.app'],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Add the HTTP methods you want to allow
   }));
